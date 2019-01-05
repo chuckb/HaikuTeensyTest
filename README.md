@@ -11,10 +11,13 @@ on a Teensy 3.5 using the Haiku JVM and the Teensyduino Arduino plugins.
 - [HaikuVM](https://github.com/chuckb/haikuVM) - I have modified the [original 1.4.3 version](http://haiku-vm.sourceforge.net/) to work with the Teensy 3.5
 - [Realterm](https://sourceforge.net/projects/realterm/) - needed to display System.out.println messages from Teensy
 
-## Building
+## Building and Running
 
 - Install dependencies
 - Put HaikuVM in c:\haikuVM
 - Check out project
-- Plug in Teensy (this has been tested on Windows 10)
+- Plug in LEDs to pins 5 & 6 (in grey on the Teensy pinout card). Don't forget pullup resistors. I used 220 ohm.
+- Plug in Teensy to USB port on workstation (this has been tested on Windows 10)
 - ./gradlew deploy
+- Push button on Teensy...uploader should load the hex file from ./build/arduino/HaikuVM/HaikuVM.ino.hex
+- Start Realterm and connect to port \USBSER000
