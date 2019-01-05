@@ -21,3 +21,5 @@ on a Teensy 3.5 using the Haiku JVM and the Teensyduino Arduino plugins.
 - ./gradlew deploy
 - Push button on Teensy...uploader should load the hex file from ./build/arduino/HaikuVM/HaikuVM.ino.hex
 - Start Realterm and connect to port \USBSER000
+
+![](https://j.gifs.com/Q039x7.gif)
